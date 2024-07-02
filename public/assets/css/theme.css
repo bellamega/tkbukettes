@@ -94,27 +94,25 @@
   font-size: 1rem;
 }
 
-/* Media queries untuk menyesuaikan tampilan pada perangkat lebih kecil */
-@media (max-width: 992px) {
-  .catalog-container {
-    grid-template-columns: repeat(2, 1fr); /* 2 kolom untuk tampilan tablet dan hp besar */
+@media (max-width: 768px) {
+  .card {
+    width: calc(50% - 20px); /* Mengatur lebar kartu menjadi 50% dari lebar layar dengan margin di antara kartu */
+    margin: 10px; /* Margin di antara kartu */
+  }
+
+  .card img {
+    width: 100%; /* Gambar mengambil lebar penuh kartu */
+    height: auto; /* Tinggi disesuaikan agar tidak terdistorsi */
+  }
+
+  /* Menyesuaikan ukuran gambar bouquet graduation */
+  .card:nth-child(4) img {
+    /* Contoh: Menyesuaikan lebar gambar agar seragam dengan gambar pada kartu lain */
+    width: 100%; /* Sesuaikan dengan nilai yang diperlukan */
+    height: auto; /* Sesuaikan dengan nilai yang diperlukan */
   }
 }
 
-@media (max-width: 576px) {
-  .catalog-container {
-    grid-template-columns: repeat(2, 1fr); /* 2 kolom untuk tampilan hp kecil */
-  }
-  .catalog-container .card-title {
-    font-size: 1.15rem;
-  }
-  .catalog-container .card-text {
-    font-size: 0.9rem;
-  }
-  .catalog-container .btn {
-    font-size: 0.9rem;
-  }
-}
 
 
 
