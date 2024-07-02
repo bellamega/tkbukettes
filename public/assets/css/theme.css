@@ -51,52 +51,6 @@
 /* Mengatur tampilan katalog dalam grid */
 .catalog-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1rem;
-  padding: 1rem;
-}
-
-.catalog-container .card {
-  background: white;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-  transition: transform 0.3s ease;
-}
-
-.catalog-container .card:hover {
-  transform: scale(1.05);
-}
-
-.catalog-container .card img {
-  width: 100%;
-  height: auto; /* Membuat gambar responsif */
-  object-fit: cover;
-}
-
-.catalog-container .card-body {
-  padding: 1rem;
-  text-align: center;
-}
-
-.catalog-container .card-title {
-  font-size: 1.25rem;
-  margin-bottom: 0.5rem;
-}
-
-.catalog-container .card-text {
-  font-size: 1rem;
-  margin-bottom: 1rem;
-}
-
-.catalog-container .btn {
-  padding: 0.5rem 1rem;
-  font-size: 1rem;
-}
-
-/* Mengatur tampilan katalog dalam grid */
-.catalog-container {
-  display: grid;
   grid-template-columns: repeat(3, 1fr); /* 3 kolom untuk tampilan web */
   gap: 1rem;
   padding: 1rem;
@@ -149,7 +103,7 @@
 
 @media (max-width: 576px) {
   .catalog-container {
-    grid-template-columns: 1fr; /* 1 kolom untuk tampilan hp kecil */
+    grid-template-columns: repeat(2, 1fr); /* 2 kolom untuk tampilan hp kecil */
   }
   .catalog-container .card-title {
     font-size: 1.15rem;
@@ -161,8 +115,6 @@
     font-size: 0.9rem;
   }
 }
-
-
 
 
 
